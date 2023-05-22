@@ -9,7 +9,6 @@ namespace ParcialFelipeRamirezLoaiza.DAL
         {
 
         }
-
         public DbSet<Ticket> Tickets { get; set; }
     }
 }
