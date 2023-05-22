@@ -71,11 +71,7 @@ namespace ParcialFelipeRamirezLoaiza.Controllers
         {
             try
             {
-                if (id != ticket.Id) return NotFound("Boleta no válida");
-
-                ticket.UseDate = DateTime.Now;
-                ticket.IsUsed = true;
-                ticket.EntranceGate = "Porteria Sur";
+                if (id != ticket.Id) return NotFound("Country not found");
 
                 _context.Tickets.Update(ticket);
                 await _context.SaveChangesAsync(); // Aquí es donde se hace el Update...
