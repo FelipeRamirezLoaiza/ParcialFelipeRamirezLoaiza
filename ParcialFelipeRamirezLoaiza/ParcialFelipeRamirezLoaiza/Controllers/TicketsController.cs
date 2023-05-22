@@ -48,9 +48,6 @@ namespace ParcialFelipeRamirezLoaiza.Controllers
             try
             {
                 ticket.Id = Guid.NewGuid();
-                ticket.UseDate = null;
-                ticket.IsUsed = false;
-                ticket.EntranceGate = null;
 
                 _context.Tickets.Add(ticket);
                 await _context.SaveChangesAsync(); // Aquí es donde se hace el Insert Into...
